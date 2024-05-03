@@ -12,24 +12,31 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// SQL to check if the table exists
-$tableName = "data";
-$sql = "SHOW TABLES LIKE '$tableName'";
-$result = $conn->query($sql);
+// // SQL to check if the table exists
+// $tableName = "data";
+// $sql = "SHOW TABLES LIKE '$tableName'";
+// $result = $conn->query($sql);
 
-// If table does not exist, create it
-if ($result->num_rows == 0) {
-    $createTableSql = "CREATE TABLE $tableName (
-        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        email TEXT NOT NULL,
-        username VARCHAR(255) NOT NULL,
-        password VARCHAR(255) NOT NULL,
-        userPic BLOB,
-        defaultPic BLOB 
-    )";
-} else {
-    echo "Table $tableName already exists";
-}
+// // If table does not exist, create it
+// if ($result->num_rows == 0) {
+//     $createTableSql = "CREATE TABLE $tableName (
+//         id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+//         email TEXT NOT NULL,
+//         username VARCHAR(255) NOT NULL,
+//         password VARCHAR(255) NOT NULL,
+//         userPic BLOB,
+//         defaultPic BLOB 
+//     )";
+    
+//     // Execute the SQL query to create the table
+//     if ($conn->query($createTableSql) === TRUE) {
+//         // Table created successfully
+        
+//     } else {
+//         echo "Error creating table: " . $conn->error;
+//     }
+// }
+return $conn;
 
-$conn->close();
 
+?>

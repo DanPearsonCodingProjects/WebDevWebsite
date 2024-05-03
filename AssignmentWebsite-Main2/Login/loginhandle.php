@@ -1,7 +1,7 @@
 <?php
 
 
-$conn = include_once("../Connection/dbconnection.php");
+$conn = require_once("../Connection/dbconnection.php");
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $loginUsername = $_POST['loginUsername'];

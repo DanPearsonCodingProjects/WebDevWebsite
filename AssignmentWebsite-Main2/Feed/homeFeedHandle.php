@@ -1,7 +1,7 @@
 <?php
 
-$conn1 = include_once("../Connection/homeFeedConnection.php");
-$conn2 = include_once("../Connection/dbconnection.php");
+$conn1 = require_once("../Connection/homeFeedConnection.php");
+$conn2 = require_once("../Connection/dbconnection.php");
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Check if 'id' cookie is set
