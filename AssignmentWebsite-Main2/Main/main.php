@@ -28,7 +28,8 @@
         <div class="textBox">
             <h1>Connect with other's who love plants, also be able to store your own plants</h1>
             <h3>The perfect place to learn more about plants and help others</h3>
-            <button>Sign Up Now</button>
+            
+            <a href="../Register/register.php">Sign Up Now</a>
         </div>
 
         <div class="imageSection">
