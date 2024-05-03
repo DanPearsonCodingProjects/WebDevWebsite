@@ -1,0 +1,14 @@
+.userInfo{
+    position: absolute;
+    margin: 0 auto;
+}
+
+.middle{
+    margin: 0 auto;
+    height: 400px;
+    width: 50%;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

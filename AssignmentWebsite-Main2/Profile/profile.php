@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="../Styles/accountMainCSS.css">
+    <link rel="stylesheet" href="../Styles/profileCSS.css">
 </head>
 <body>
 
@@ -44,12 +45,14 @@
          
     </div>
 
-
-    <div class="userInfo">
-        <?php
-        include('profileHandle.php');
-        ?>
+    <div class="middle">
+        <div class="userInfo">
+            <?php
+            include('profileHandle.php');
+            ?>
+        </div>
     </div>
+
     
 </body>
 </html>

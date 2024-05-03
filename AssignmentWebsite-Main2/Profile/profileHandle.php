@@ -1,10 +1,9 @@
 <?php
 // URL of the PHP file you want to send the GET request to
-$url = 'http://localhost/AssignmentWebsite-Main2/AssignmentWebsite-Main2/Profile/profileAPI.php';
+$url = 'http://localhost/WebDevWebsite/AssignmentWebsite-Main2/Profile/profileAPI.php';
 
 // Add any parameters you want to send in the GET request
-echo "Cookie";
-echo $_COOKIE['id'];
+
 
 
 
@@ -33,8 +32,9 @@ $apiResponse = file_get_contents($url, false, $context);
 $responseData = json_decode($apiResponse, true);
 
 // Output the array using print_r()
-echo $apiResponse;
+echo $responseData['username'];
+echo $responseData['email'];
 
 // or Output the array using var_dump()
 // var_dump($responseData);
-?>
+
