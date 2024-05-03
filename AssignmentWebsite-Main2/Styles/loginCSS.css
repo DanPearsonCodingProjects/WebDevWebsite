@@ -1,0 +1,57 @@
+.loginMain{
+    margin: 0 auto;
+    height: 400px;
+    width: 400px;
+    background-color:aquamarine;
+    border-radius: 5px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(2px 4px 6px #378163);
+    background-color: rgba(152, 151, 151, 0.2); 
+    box-shadow: inset 0 0 0 200px rgb(255, 255, 255, 0.08);
+    flex-direction: column;
+}
+
+.loginMain form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%;
+    width: 80%;
+}
+
+.loginMain form input{
+    height: 50px;
+    background-color:rgba(164,239,209,0.6);
+    border-radius: 5px;
+    border: 2px solid rgba(164,239,209,0.6);
+    font-family: 'Quicksand';
+    padding: 5px;
+    font-weight: 700;
+
+}
+
+body{
+    background-image: url('../Images/Sprinkle.svg');
+}
+
+.loginMain form button{
+    height: 45px;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Madimi One';
+    background-color: #A4EFD1;
+}
+
+.loginMain form button:hover{
+    background-color: #378163;
+    
+}
+
+h3{
+    font-family: 'Quicksand';
+    font-weight: 700;
+}
