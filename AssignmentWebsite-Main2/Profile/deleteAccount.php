@@ -12,9 +12,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     } else {
         // Check if the update was successful
         if ($stmt->affected_rows > 0) {
-            echo "Success";
+            header('Location: ../Main/main.php');
         } else {
             echo "No rows were deleted. Maybe the user with that ID doesn't exist.";
         }
     }
 }
+
+$conn1->close();

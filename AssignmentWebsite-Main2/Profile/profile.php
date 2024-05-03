@@ -57,7 +57,7 @@
         </form>
 
 
-        <form action="deleteAccount.php" type="post">
+        <form action="deleteAccount.php" method="post">
             <button type="submit">DELETE ACCOUNT</button>
         </form>
     </div>
