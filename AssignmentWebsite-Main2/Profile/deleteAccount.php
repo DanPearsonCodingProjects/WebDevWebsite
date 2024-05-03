@@ -1,17 +1,20 @@
 <?php
 
-$conn = include_once('../Connection/dbconnection.php');
+$conn1 = include_once('../Connection/dbconnection.php');
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
-    $user = $_COOKIE['id'];
-    $stmt = $conn -> prepare('DELETE FROM data WHERE id = ?');
-    $stmt->bind_param('i',$user);
+    echo "Recieved";
+    $stmt = $conn1 -> prepare('DELETE FROM data WHERE id = ?');
+    $stmt->bind_param('i',$_COOKIE['id']);
     $stmt->execute();
-
-    // Check if the update was successful
-    if ($stmt->affected_rows > 0) {
-        echo "Success";
+    if ($stmt->errno) {
+        echo "Error: " . $stmt->error;
     } else {
-        echo "Update failed! Please go refresh the site";
+        // Check if the update was successful
+        if ($stmt->affected_rows > 0) {
+            echo "Success";
+        } else {
+            echo "No rows were deleted. Maybe the user with that ID doesn't exist.";
+        }
     }
 }

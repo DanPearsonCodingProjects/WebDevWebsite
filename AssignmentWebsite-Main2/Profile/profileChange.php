@@ -16,3 +16,5 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         echo "Update failed! Please go refresh the site";
     }
 }
+
+$conn->close();

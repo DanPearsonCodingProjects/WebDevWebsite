@@ -51,6 +51,7 @@
         ?>
 
         <form action="profileChange.php" method="post">
+
             <input type="text" placeholder="New Name" name="NameChange">
             <button type="submit">Change Name</button>
         </form>
