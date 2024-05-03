@@ -33,11 +33,6 @@
                 </div>
 
                 <div class="aSelect">
-                    <img src="../Images/charm--plant-pot.svg" alt="">
-                    <a href="../Account/accountMain.php">My Plants</a>
-                </div>
-
-                <div class="aSelect">
                     <img src="../Images/ic--outline-logout.svg" alt="">
                     <a href="../Main/main.php">Log Out</a>
                 </div>

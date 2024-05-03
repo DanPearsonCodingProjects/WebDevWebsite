@@ -34,11 +34,6 @@
                 </div>
 
                 <div class="aSelect">
-                    <img src="../Images/charm--plant-pot.svg" alt="">
-                    <a href="../Account/accountMain.php">My Plants</a>
-                </div>
-
-                <div class="aSelect">
                     <img src="../Images/ic--outline-logout.svg" alt="">
                     <a href="../Main/main.php">Log Out</a>
                 </div>
@@ -49,17 +44,20 @@
         <?php
         include('profileHandle.php');
         ?>
+        <div class="forms">
+            <form action="profileChange.php" method="post">
 
-        <form action="profileChange.php" method="post">
-
-            <input type="text" placeholder="New Name" name="NameChange">
-            <button type="submit">Change Name</button>
-        </form>
+                <input type="text" placeholder="New Name" name="NameChange">
+                <button type="submit">Change Name</button>
+            </form>
 
 
-        <form action="deleteAccount.php" method="post">
-            <button type="submit">DELETE ACCOUNT</button>
-        </form>
+            <form action="deleteAccount.php" method="post">
+                <button type="submit">DELETE ACCOUNT</button>
+            </form>
+
+        </div>
+
     </div>
 
     

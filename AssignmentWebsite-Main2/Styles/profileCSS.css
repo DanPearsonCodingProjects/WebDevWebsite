@@ -18,4 +18,12 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
