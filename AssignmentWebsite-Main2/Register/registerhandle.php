@@ -15,7 +15,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $user = $stmt2->fetch();
 
     if($user){
-        echo 'Email already exists';
+        header("Location: ../Register/register.php?error=email_exists");
         $stmt2 -> close();
         $conn -> close();   
     }else{

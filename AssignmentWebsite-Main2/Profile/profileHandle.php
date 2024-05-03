@@ -32,8 +32,11 @@ $apiResponse = file_get_contents($url, false, $context);
 $responseData = json_decode($apiResponse, true);
 
 // Output the array using print_r()
-echo $responseData['username'];
-echo $responseData['email'];
+echo '<div class="profileData">';
+echo "<h1>Profile Details</h1>";
+echo "<p> {$responseData["username"]} </p>";
+echo "<p> {$responseData["email"]} </p>";
+echo '</div>';
 
 // or Output the array using var_dump()
 // var_dump($responseData);

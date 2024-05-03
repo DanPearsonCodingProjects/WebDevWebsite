@@ -39,7 +39,7 @@
 
                 <div class="aSelect">
                     <img src="../Images/ic--outline-logout.svg" alt="">
-                    <a href="">Log Out</a>
+                    <a href="../Main/main.php">Log Out</a>
                 </div>
                 
                 

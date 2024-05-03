@@ -55,12 +55,14 @@
         <div class="plantDetails">
             <button onclick="togglePopup()">X</button>
             <div class="gridDetails">
-                <input type="file">
-                <select name="plant" id="plantDropdown">
-        <!-- Placeholder option for select2 to work properly -->
-                    <option></option>
-                </select>
-              
+                <form action="">
+
+                    <input type="file">
+                    <select name="plant" id="plantDropdown">
+                        <option></option>
+                    </select>
+
+                </form>              
             </div>
         </div>
     </div>

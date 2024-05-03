@@ -1,3 +1,20 @@
+<?php
+$error = $_GET['error'] ?? '';
+
+// Function to display error message
+function displayErrorMessage($error) {
+    switch($error) {
+        case 'email_exists':
+            echo '<div class="error-message">Email already exists. Please choose a different email.</div>';
+            break;
+        // Add more cases for other errors if needed
+        default:
+            // No error or unknown error
+            break;
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +25,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header>
         <div class="containHeader">
             <a href="../Main/main.php">Plants 4 You</a>
@@ -17,12 +33,10 @@
                 
             </div>
         </div>
-
     </header>
     <div class="gridContainer">
         <div class="container3">
             <h4>What to expect</h4>
-
             <ul>
                 <li>Post to feed</li>
                 <li>Explore a range of plants</li>
@@ -30,7 +44,6 @@
                 <li>Care tips for your plants</li>
                 <li>Keep track of your plants</li>
             </ul>
-
             <img src="logo.png" alt="">
             
         </div>
@@ -40,20 +53,18 @@
                 <input type="text" name="email" placeholder="Enter email">
                 <input type="text" name="username" placeholder="Enter username">
                 <input type="password" name="password" placeholder="Enter password">
-    
+
                 <button type="submit">Register</button>
             </form>
+
+            <?php displayErrorMessage($error); ?>
         </div>
 
         <div class="container2">
             <h4>Already have an account?</h4>
             <a href="">Login</a>
         </div>
-
-
     </div>
-
-
     
 </body>
 </html>
