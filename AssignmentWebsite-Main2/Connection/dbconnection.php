@@ -18,24 +18,23 @@ if ($conn->connect_error) {
 // $result = $conn->query($sql);
 
 // // If table does not exist, create it
-// if ($result->num_rows == 0) {
-//     $createTableSql = "CREATE TABLE $tableName (
-//         id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-//         email TEXT NOT NULL,
-//         username VARCHAR(255) NOT NULL,
-//         password VARCHAR(255) NOT NULL,
-//         userPic BLOB,
-//         defaultPic BLOB 
-//     )";
-    
-//     // Execute the SQL query to create the table
-//     if ($conn->query($createTableSql) === TRUE) {
-//         // Table created successfully
-        
-//     } else {
-//         echo "Error creating table: " . $conn->error;
-//     }
-// }
+
+$tableSQL = "CREATE TABLE IF NOT EXISTS data(
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    email TEXT NOT NULL,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    userPic BLOB,
+    defaultPic BLOB    
+)";
+
+if($conn->query($tableSQL)){
+    //Table Successful
+    return $conn;
+}else{
+    echo "error creating table";
+}
+
 return $conn;
 
 

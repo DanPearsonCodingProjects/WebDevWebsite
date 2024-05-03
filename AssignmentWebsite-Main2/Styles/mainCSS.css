@@ -42,32 +42,6 @@ h1{
     
 }
 
-.middle a{
-    background-color: transparent;
-    width: 95%;
-    height: 15%;
-    cursor: pointer;
-    box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.1);
-    border-radius: 5px;
-    font-family: 'Quicksand';
-    font-weight: 800;
-    background-color: #79D7B2;
-    border-color: #79D7B2;
-    text-align: center;
-    padding: 25px;
-    text-decoration: none;
-    color: #2B5A47;
-    font-weight: bold;
-    font-size: 20px;
-
-    
-}
-
-.middle a:hover{
-    background-color: #2B5A47;
-    color: #79D7B2;
-    border-color: #2B5A47;
-}
 .middle button:hover{
     background-color: #2B5A47;
     color: #79D7B2;
